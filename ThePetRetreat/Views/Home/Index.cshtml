@@ -1,13 +1,13 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Home";
 }
 
 <main>
-    <div id="carouselExampleCaptions" class="carousel slide">
+    <div id="carouselCaptions" class="carousel rounded slide mb-5">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -32,48 +32,119 @@
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
 
-    <section class="row" aria-labelledby="aspnetTitle">
-        <h1 id="title" class="mb-2">The Pet Retreat</h1>
+    <section class="row" aria-labelledby="petRetreatTitle">
+        <h1 id="title" class="mb-3 text-center">The Pet Retreat</h1>
         <p class="lead mb-4">
             Welcome to The Pet Retreat — a cozy, trusted haven where your pets can relax, play,
             and feel right at home with personalized care while you're away.
         </p>
     </section>
 
-    <div class="row mt-4">
-        <section class="col-md-4" aria-labelledby="boardingServicesTitle">
-            <h2 id="boardingServicesTitle">Boarding Services</h2>
-            <p>
-                Flexible options tailored to your pet’s needs—from cozy overnight stays to extended care.
-                We accommodate dogs, cats, and other small animals with loving attention.
-            </p>
-            <p><a class="btn btn-outline-dark" href="#">Learn more &raquo;</a></p> @*Add services page*@
-        </section>
-        <section class="col-md-4" aria-labelledby="dailyRoutineTitle">
-            <h2 id="dailyRoutineTitle">A Day at The Retreat</h2>
-            <p>
-                Our guests enjoy playtime, walks in nature, socialization, and plenty of rest.
-                Every day is designed around fun and comfort, with personalized care from our expert staff.
-            </p>
-            <p><a class="btn btn-outline-dark" href="#">Discover our routine &raquo;</a></p> @*Add About/DailyRoutine*@
-        </section>
-        <section class="col-md-4" aria-labelledby="meetTeamTitle">
-            <h2 id="meetTeamTitle">Meet Our Team</h2>
-            <p>
-                Our experienced and compassionate staff are passionate about animals and trained to provide one-on-one care
-                to ensure every pet feels safe and loved.
-            </p>
-            <p><a class="btn btn-outline-dark" href="#">Get to know us &raquo;</a></p> @*Add About/Team*@
-        </section>
+    <div class="d-flex justify-content-around flex-wrap mt-5 gap-4">
+        <div class="card service-card" style="width: 25rem;">
+            <div class="card-body justify-content-between">
+                <h5 class="card-title">Boarding Services</h5>
+                <p class="card-text">
+                    Flexible options tailored to your pet’s needs—from cozy overnight stays to extended care.
+                    We accommodate dogs, cats, and other small animals with loving attention.
+                </p>
+                <a href="#" class="btn btn-outline-dark">Learn more &raquo;</a> @*Add Services*@
+            </div>
+        </div>
+        <div class="card service-card" style="width: 25rem;">
+            <div class="card-body">
+                <h5 class="card-title">A Day at The Retreat</h5>
+                <p class="card-text">
+                    Our guests enjoy playtime, walks in nature, socialization, and plenty of rest.
+                    Every day is designed around fun and comfort, with personalized care from our expert staff.
+                </p>
+                <a href="#" class="btn btn-outline-dark">Discover our routine &raquo;</a> @*Add About/DailyRoutine*@
+            </div>
+        </div>
+        <div class="card service-card" style="width: 25rem;">
+            <div class="card-body">
+                <h5 class="card-title">Meet Our Team</h5>
+                <p class="card-text">
+                    Our experienced and compassionate staff are passionate about animals and trained to provide one-on-one care
+                    to ensure every pet feels safe and loved.
+                </p>
+                <a href="#" class="btn btn-outline-dark">Get to know us &raquo;</a> @*Add About/Team*@
+            </div>
+        </div>
     </div>
+
+    <section class="quick-stats text-center my-5">
+        <div class="container">
+            <div class="row justify-content-center gap-4">
+                <div class="col-md-3">
+                    <h3>500+</h3>
+                    <p>Happy Pets</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>10+</h3>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>7</h3>
+                    <p>Daily Play Sessions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container mt-5 mb-5 testimonials">
+        <h2 class="text-center mb-5">Read Our Customers Testimonials</h2>
+        <div class="testimonial-content">
+            <div class="row gap-5">
+                <div class="col-md-7">
+                    <p class="mb-5">
+                        <em>
+                            "The Pet Retreat was amazing! My dog felt right at home, and the staff was so caring.
+                            Booking was easy, and the team was incredibly attentive to my cat's needs.
+                            I had total peace of mind while I was away. Highly recommend!"
+                        </em>
+                        – Nici B.
+                    </p>
+                    <p class="mb-5">
+                        <em>
+                            "I couldn’t be happier with The Pet Retreat! My dog was treated like part of the family and
+                            came home happy and relaxed. The staff paid attention to every detail, and the check-in
+                            process was a breeze. I’ll definitely be coming back!"
+                        </em>
+                        – Alex R.
+                    </p>
+                    <p class="mb-5">
+                        <em>
+                            "The Pet Retreat exceeded my expectations! My cat is usually shy, but she warmed up quickly
+                            thanks to the calm environment and caring staff. I felt totally at ease while I was away.
+                            Highly recommend!"
+                        </em>
+                        – Jordan M.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="~/Images/Home/testimonial-dog.jpg" alt="Happy pet" class="testimonial-img img-fluid rounded" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cta-section text-center">
+        <h2 class="mb-3">Ready to book your pet's next stay?</h2>
+        <p class="lead">Choose to <a href="#">book a stay</a> or <a href="@Url.Action("Index", "ContactSubmission")">contact us</a> with any questions.</p>
+        <a href="#" class="btn btn-primary btn-lg mt-2 me-2">Book Now</a>
+        <a href="@Url.Action("Index", "ContactSubmission")" class="btn btn-outline-primary btn-lg mt-2">Contact Us</a>
+    </section>
 </main>
