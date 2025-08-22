@@ -252,12 +252,14 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\css\HomePage.css" />
+    <Content Include="Content\css\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="Images\Home\dogs-kennel-carousel.jpg" />
     <Content Include="Images\Home\dogs-river-carousel.jpg" />
     <Content Include="Images\Home\facility-carousel.jpg" />
+    <Content Include="Images\Home\testimonial-dog.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
