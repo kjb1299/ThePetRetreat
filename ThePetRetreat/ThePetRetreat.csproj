@@ -316,6 +316,10 @@
     <Content Include="Views\Shared\_UserLayout.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\ContactSubmission\ContactSubmissionSuccessful.cshtml" />
+    <Content Include="Views\Shared\LayoutParts\_NavBar.cshtml" />
+    <Content Include="Views\Shared\LayoutParts\_Footer.cshtml" />
+    <Content Include="Views\Shared\LayoutParts\_Head.cshtml" />
+    <Content Include="Views\Shared\_FullWidthLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

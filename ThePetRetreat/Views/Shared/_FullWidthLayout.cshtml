@@ -3,11 +3,9 @@
 @Html.Partial("LayoutParts/_Head")
 <body>
     @Html.Partial("LayoutParts/_NavBar")
-    <div class="container body-content">
         @RenderBody()
         <hr />
     @Html.Partial("LayoutParts/_Footer")
-    </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
